@@ -1,0 +1,36 @@
+.statisticsItem {
+   display: flex;
+   flex-direction: column;
+   background-color: var(--white);
+   align-items: center;
+   padding: 77px 30px 41px 30px;
+   border-radius: 5px;
+   margin-bottom: 90px;
+   position: relative;
+
+   & div {
+      width: 8px;
+      height: 100px;
+      bottom: calc(0% - 100px);
+      position: absolute;
+      color: var(--aqua);
+   }
+
+   & p:first-child {
+      color: var(--dark);
+      font-weight: 700;
+      font-size: 1.37rem;
+      line-height: 1.5;
+      letter-spacing: 0px;
+   }
+
+   img {
+      padding: 24px;
+      background-color: var(--dark-violet);
+      border-radius: 50%;
+      position: absolute;
+      top: calc(0% - 44px);
+      left: 50%;
+      transform: translateX(-50%);
+   }
+}

@@ -1,0 +1,24 @@
+@mixin inputButton {
+   display: block;
+   padding-top: 12px;
+   padding-bottom: 12px;
+   background: var(--aqua);
+   border-radius: 5px;
+   transition: all linear 0.5;
+
+   span {
+      font-weight: 700;
+      color: var(--white);
+      font-size: 20px;
+      line-height: 1.5;
+   }
+}
+
+.inputButton {
+   @include inputButton;
+}
+
+.inputButtonCopied {
+   @include inputButton;
+   background: var(--violet);
+}

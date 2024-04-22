@@ -1,0 +1,56 @@
+.shortenlink {
+   display: flex;
+   flex-direction: column;
+   background: var(--white);
+   margin-block: 30px;
+   text-align: left;
+   border-radius: 5px;
+   position: relative;
+
+   &[data-active="false"] {
+      button {
+         background: var(--aqua);
+      }
+   }
+
+   &[data-active="true"] {
+      button {
+         background: var(--violet);
+      }
+   }
+
+   & div {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 1rem;
+
+      p {
+         font-weight: 500;
+         line-height: 36px;
+         letter-spacing: 0.12px;
+      }
+   }
+
+   & div:first-child {
+      border-bottom: var(--grey) 1px solid;
+
+      p {
+         color: var(--black);
+      }
+   }
+
+   & div:last-child {
+      p {
+         color: var(--aqua);
+         margin-bottom: 10px;
+      }
+   }
+
+   .close {
+      background: none !important;
+      position: absolute;
+      top: 5%;
+      right: 3%;
+   }
+}

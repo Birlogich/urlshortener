@@ -1,0 +1,9 @@
+#root {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+

@@ -1,0 +1,41 @@
+.footer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background: var(--black);
+
+   & > p {
+      margin: 50px 0;
+      font-size: 1.75rem;
+   }
+
+   & > div,
+   & > div > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & > div {
+         gap: 10px;
+
+         & > a:last-child {
+            margin-bottom: 40px;
+         }
+      }
+   }
+
+   p {
+      color: var(--white);
+   }
+
+   a {
+      color: var(--grey);
+   }
+
+   & > div:last-child {
+      flex-direction: row;
+      display: flex;
+      gap: 24px;
+      margin-bottom: 55px;
+   }
+}

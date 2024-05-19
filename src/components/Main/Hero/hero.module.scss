@@ -4,21 +4,23 @@
    padding: 0 20px;
    position: relative;
 
-   & div:first-child {
-      height: 338px;
-      position: relative;
-      margin-bottom: 38px;
-      &::after {
-         content: "";
-         height: 100%;
-         width: 100%;
-         display: block;
-         position: absolute;
-         top: 0;
-         left: 27%;
-         background: url("../../../../images//illustration-working.svg") center no-repeat;
-         background-size: contain;
-         transform: scale(1.5);
+   @media (max-width: 440px) {
+      & div:first-child {
+         height: 338px;
+         position: relative;
+         margin-bottom: 38px;
+         &::after {
+            content: "";
+            height: 100%;
+            width: 100%;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 27%;
+            background: url("../../../../images//illustration-working.svg") center no-repeat;
+            background-size: contain;
+            transform: scale(1.5);
+         }
       }
    }
 
